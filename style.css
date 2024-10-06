@@ -1,37 +1,87 @@
-html {
-  height: 100%;
-  width: 100%;
-  font-family: "Titillium Web", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  background-color: #E2F1E7;
 }
 
-body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
+#main-content{
+  padding: 24px 64px;
 }
-
-button {
-  font-size: 7px;
-}
-
-#main-content {
-  position: relative;
-  display: flex;
-  justify-content: center;
+form{
+  
+  border: 1px solid black;
+  background-color: #243642;
+  color: white;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 24px;
+  display:  flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  margin-bottom: 48px;
 }
 
-#list {
-  margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+form input ,form select{
+  height: 56px;
+ 
+  border-radius: 8px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid gray;
+  flex: 0.8;
+  flex-grow: inherit;
+  flex-shrink: inherit;
 }
+
+form button{
+  height: 40px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor:  pointer;
+  background-color:#387478
+  ;
+  color: white;
+  
+}
+form div{
+  position: relative;
+}
+
+div label{
+  position: absolute;
+  left: 8px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  background-color:black;
+  color:white;
+  padding: 2px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  
+
+}
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 64px;
+  border-radius:8px;
+  background-color: #387478;
+  color: white;
+  margin-bottom: 8px;
+  width: 100%;
+  padding: 8px 24px;
+}
+p{
+  width: 80%;
+}
+
